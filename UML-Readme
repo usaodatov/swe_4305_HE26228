@@ -1,1 +1,26 @@
 
+# UML Discription
+
+Regent Kids Library Management System in three key areas: core types, inheritance, and relationships.
+
+Core Types
+
+RegentKidsLibrary (top-right) is our controller. It holds three maps—staff: Map<String,User>, customers: Map<String,Renter>, and books: Map<String,Book>—and provides all operations (initialize, run, issueBook, returnBook, add/remove book, create/delete staff & customer, listBooks, listStaff, nextId).
+
+Position (bottom-left) is an enum with values ADMIN and STAFF, assigning role levels to users.
+
+Inheritance Hierarchy
+
+User (center-left) is an abstract base class declaring common fields (user_ID, p_word, f_name, l_name, job_role) and an abstract showMenu(RegentKidsLibrary, Scanner).
+
+SuperUser and Staff extend User, inheriting those fields and implementing their own showMenu logic (full vs. limited menu).
+
+Associations
+
+RegentKidsLibrary “manages” many Users, Renters, and Books (solid lines with “many” multiplicities).
+
+Book (right) holds its own data plus rental status (on_shelves, renters_ID, returnDay) and operations (lend(), bringBack()).
+
+Renter (bottom-right) models a customer with fields (user_ID, f_name, l_name, cellNum, bookOnLoan) and getters/setters to track loans.
+
+Books are “rented by” Renters (arrow from Book back to Renter), and customers are maintained in RegentKidsLibrary*
