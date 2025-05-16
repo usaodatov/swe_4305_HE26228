@@ -1,14 +1,16 @@
 UML Discription
 
-8Regent Kids Library Management System in three key areas: core types, inheritance, and relationships.
+8Regent Kids Library Management System in core types, inheritance, and relationships.
 
 
 Core Types
-RegentKidsLibrary (top-right) is our controller. It holds three maps—staff: Map<String,User>, customers: Map<String,Renter>, and books: Map<String,Book>—and provides all operations (initialize, run, issueBook, returnBook, add/remove book, create/delete staff & customer, listBooks, listStaff, nextId).
-Position (bottom-left) is an enum with values ADMIN and STAFF, assigning role levels to users.
+RegentKidsLibrary (top-right) controls the system, managing staff: Map<String,User>, customers: Map<String,Renter>, and books: Map<String,Book>. Operations include:
+initialize, run, issueBook, returnBook, ~~add/remove book~~, create/delete staff & customer, listBooks, listStaff, nextId
+
+Position (bottom-left), an enum with ADMIN and STAFF values, assigns user roles.
 
 Inheritance Hierarchy
-User (center-left) is an abstract base class declaring common fields (user_ID, p_word, f_name, l_name, job_role) and an abstract showMenu(RegentKidsLibrary, Scanner).
+User (center-left), an abstract base class, defines fields and an abstract method:
 
 
 
@@ -37,11 +39,12 @@ job_role
 Role assigned to the user
 
 
-SuperUser and Staff extend User, inheriting those fields and implementing their own showMenu logic (full vs. limited menu).
+showMenu(RegentKidsLibrary, Scanner)
+
+SuperUser and Staff extend User, inheriting fields and implementing distinct showMenu logic (full vs. limited).
 
 Associations
-RegentKidsLibrary “manages” many Users, Renters, and Books (solid lines with “many” multiplicities).
-Book (right) holds its own data plus rental status (on_shelves, renters_ID, returnDay) and operations (lend(), bringBack()).
+RegentKidsLibrary manages many Users, Renters, and Books (solid lines, “many” multiplicities). Book (right) tracks:
 
 
 
@@ -51,24 +54,27 @@ Description
 
 
 on_shelves
-Indicates if the book is available
+Indicates if book is available
 
 
 renters_ID
-ID of the renter who borrowed it
+ID of renter who borrowed it
 
 
 returnDay
 Due date for return
 
 
-Renter (bottom-right) models a customer with fields (user_ID, f_name, l_name, cellNum, bookOnLoan) and getters/setters to track loans.
+Operations: lend(), bringBack(). Renter (bottom-right) has:
 
 
 
 Field
 Description
 
+
+---------------
+--------------------------------------
 
 
 user_ID
@@ -88,7 +94,10 @@ Contact number of the renter
 
 
 bookOnLoan
-Book currently borrowed by renter
+Book currently borrowed
 
 
-Books are “rented by” Renters (arrow from Book back to Renter), and customers are maintained in RegentKidsLibrary*
+Books are “rented by” Renters (arrow from Book to Renter), maintained in RegentKidsLibrary*.
+
+
+
