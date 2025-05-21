@@ -3,14 +3,14 @@
 This repository contains the source code, UML design, and demonstration screenshots for the **Regent Kids Library Management System**, developed as part of the SWE4305 Object-Oriented Programming coursework (HE26228). The project applies Java and core OOP principles: **encapsulation, abstraction, inheritance, and polymorphism**.
 
 ##  Repository Structure
--src/ # Java source code (RegentKidsLibrary.java & classes)
--Screenshots/ # System demo screenshots (login, book/user actions, errors)
--UML-Readme # Summary of UML diagram use and structure
--RegentKidsLibrary.drawio.png # Main UML Class Diagram (exported from draw.io)
--README.md # This project overview file
--idea/ # IntelliJ project configuration
--gitignore # Git ignore file for compiled classes and IDE config
--RegentKidsLibrary_SWE4305__HE26228.iml # IntelliJ module file
+- src/ # Java source code (RegentKidsLibrary.java & classes)
+- Screenshots/ # System demo screenshots (login, book/user actions, errors)
+- UML-Readme # Summary of UML diagram use and structure
+- RegentKidsLibrary.drawio.png # Main UML Class Diagram (exported from draw.io)
+- README.md # This project overview file
+- idea/ # IntelliJ project configuration
+- gitignore # Git ignore file for compiled classes and IDE config
+- RegentKidsLibrary_SWE4305__HE26228.iml # IntelliJ module file
 
 
 
