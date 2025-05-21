@@ -1,13 +1,13 @@
 ## Author: Umid Saodatov
 
-# 📂 Screenshots Folder – SWE4305 LMS Project
+# Screenshots Folder – SWE4305 LMS Project
 
 This folder contains all required screenshots for the **Regent Kids Library Management System**, developed as part of the SWE4305 Object-Oriented Programming coursework.
 
 
 ---
 
-## 🧾 Purpose
+## Purpose
 
 Each image in this folder was captured during the development and testing of the LMS application. They demonstrate:
 - OOP concepts in practice (LO1)
