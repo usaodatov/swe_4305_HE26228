@@ -1,3 +1,5 @@
+## Author: Umid Saodatov
+
 # 📂 Screenshots Folder – SWE4305 LMS Project
 
 This folder contains all required screenshots for the **Regent Kids Library Management System**, developed as part of the SWE4305 Object-Oriented Programming coursework.
@@ -32,19 +34,3 @@ Each image in this folder was captured during the development and testing of the
 | `LMS_UserList.png.jpg`       | Display of user list (staff view)                     | Section 5: Implementation       |
 | `LMS_ErrorHandling.png.jpg`  | Example of system validation error                    | Section 6: Testing              |
 
----
-
-## 🗂️ Usage Instructions
-
-- **Embed** these screenshots in the coursework report (DOCX) with clear figure numbers and references (e.g., *Figure 3: LMS_BookList.png.jpg*).
-- **Retain** original file names to maintain traceability with the report appendix references.
-- **Optional**: You may zip this folder and include in your final submission package as `HE26228_SWE4305_Screenshots.zip`.
-
----
-
-## 🔐 Notes
-
-- All files were captured from a **console-based Java application** run on a local development environment.
-- These screenshots provide **assessment-ready visual evidence** of your system’s working state, mapped directly to marking criteria.
-
----
