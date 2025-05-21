@@ -4,7 +4,6 @@
 
 This folder contains all required screenshots for the **Regent Kids Library Management System**, developed as part of the SWE4305 Object-Oriented Programming coursework.
 
-The screenshots serve as visual documentation of the system’s implementation, functionality, and user interaction—supporting the report's **evidence-based validation** of Learning Outcomes (LO1–LO4).
 
 ---
 
